@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sour Gummy", sans-serif;
+}
+
+header {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 80px;
+}
+
+header h4 {
+    position: absolute;
+    left: 10%;
+    bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.intro-ss {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #161616;
+    transition: 1s;
+}
+
+.logo-header-ss {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    display: flex; /* Use flexbox for proper alignment */
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+}
+
+.logo-ss {
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+    font-size: 3rem; /* Adjust font size if necessary */
+}
+
+.logo-ss.active {
+    opacity: 1;
+    transition: ease-in-out 0.5s;
+}
+
+.logo-ss.fade {
+    opacity: 0;
+    transition: ease-in-out 0.5s;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="shortcut icon" href="coding.png" type="image/png">
+        <title>Quiz App</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="splashscreen.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    </head>
+
+    <body>
+        <!-- Splash Screen -->
+        <div class="intro-ss">
+            <h1 class="logo-header-ss">
+                <span class="logo-ss">Qu</span><span class="logo-ss">iz</span>
+            </h1>
+        </div>
+        <main class="main">
+            <header class="header">
+                <a href="index.html" class="logo">Quiz</a>
+
+                <nav class="navbar-about">
+                    <a href="about.html">About</a>
+                </nav>
+                <nav class="navbar-help">
+                    <a href="help.html">Help</a>
+                </nav>
+            </header>
+
+            <div class="container">
+                <section class="quiz-section">
+                    <div class="quiz-box">
+                        <h1 class="quiz-category">Quiz App</h1>
+                        <div class="quiz-header">
+                            <span class="header-score">Score: 0 / 5</span>
+                        </div>
+
+                        <h2 class="question-text"></h2>
+
+                        <div class="option-list">
+                            <!-- The Below Code is Quiz Options demo while building -->
+                            <!-- <div class="option">
+                            <span>A. Jack</span>
+                        </div>
+                        <div class="option">
+                            <span>B. Shuva</span>
+                        </div>
+                        <div class="option">
+                            <span>C. Ram</span>
+                        </div>
+                        <div class="option">
+                            <span>D. Hari</span>
+                        </div> -->
+                        </div>
+
+                        <div class="quiz-footer">
+                            <span class="question-total">1 of 5 Questions</span>
+                            <button class="next-btn">Next</button>
+                        </div>
+                    </div>
+
+                    <div class="result-box">
+                        <h2>Quiz Result!</h2>
+                        <div class="percentage-container">
+                            <div class="circular-progress">
+                                <span class="progress-value">0%</span>
+                            </div>
+
+                            <span class="score-text">Your Score 0 out of 5</span>
+                        </div>
+
+                        <div class="buttons">
+                            <button class="tryAgain-btn">Try Again</button>
+                            <button class="goHome-btn">Go To Home</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="home">
+                    <div class="home-content">
+                        <p>Wanna Test Your IQ?</p>
+                        <button class="start-btn">Get Started</button>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <div class="popup-info">
+            <h2>Choose a Catogery</h2>
+            <button class="info science-cat"><i class="fas fa-flask"></i> Science</button>
+            <button class="info maths-cat"><i class="fas fa-square-root-alt"></i> Mathematics</button>
+            <button class="info english-cat"><i class="fas fa-book"></i> English</button>
+            <button class="info general-cat"><i class="fas fa-globe"></i> General</button>
+            <button class="info physics-cat"><i class="fas fa-atom"></i> Physics</button>
+            <button class="info computer-cat"><i class="fas fa-laptop-code"></i> Computer</button>
+            <button class="info random-cat rapid-cat"><i class="fas fa-bolt"></i>Random</button>
+
+            <div class="btn-group">
+                <button class="info-btn exit-btn">Exit Quiz</button>
+                <a href="#" class="info-btn continue-btn">Continue</a>
+            </div>
+        </div>
+
+        <script src="splashscreen.js"></script>
+        <script src="script.js"></script>
+        <script src="questions.js"></script>
+    </body>
+
+    </html>
